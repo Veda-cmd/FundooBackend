@@ -1,0 +1,8 @@
+/Backend/.env
+/Backend/node_modules
+/Backend/test/.env
+/Backend/test/cool.jpeg
+/Backend/test/token.txt
+/Backend/test/logs
+/Backend/services/push.js
+/Backend/logs
