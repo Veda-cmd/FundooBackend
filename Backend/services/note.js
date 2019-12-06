@@ -14,7 +14,7 @@ const cron = require('node-cron')
 const noteModel = require('../models/note');
 const labelService = require('./label');
 const logger = require('./log');
-const push=require('./push.js')
+// const push=require('./push.js')
 
 class noteService {
 
@@ -590,8 +590,8 @@ class noteService {
                             let currentReminder = new Date(sortArray[j].reminder).getDay();
                             let today = new Date().getDay();
                             if (sortArray[j].reminder != null && currentReminder == today) {
-                                // console.log(`Upcoming reminders are:\n`, sortArray[j]);
-                                push.pushNotify(sortArray[j]);
+                                console.log(`Upcoming reminders are:\n`, sortArray[j]);
+//                                 push.pushNotify(sortArray[j]);
                             }
                         }
                     }
