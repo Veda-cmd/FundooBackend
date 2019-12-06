@@ -27,7 +27,7 @@ router.post('/register', userControl.register);
 router.post('/login', userControl.login);
 router.post('/forgot',userControl.forgot);
 router.post('/reset',auth.checkToken,userControl.reset);
-router.post('/upload',auth.loginToken,profileImage.single('image'),userControl.upload);
+// router.post('/upload',auth.loginToken,profileImage.single('image'),userControl.upload);
 router.post('/verify',auth.verificationToken,userControl.verifyMail);
 router.post('/note/addNote',auth.loginToken,noteController.addNote);
 router.get('/note/getAllNotes',auth.loginToken,cacheController.cacheNotes,noteController.getAllNotes);
