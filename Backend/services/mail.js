@@ -27,8 +27,8 @@ let sendForgotLink = (url,req) =>
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-        user: process.env.email_id,
-        pass: process.env.password
+        user: vedant.nare04@gmail.com,
+        pass: zjcluqqdltewqdng
         } 
     });
 
@@ -37,7 +37,7 @@ let sendForgotLink = (url,req) =>
     */
 
     let mailOptions = {
-        from: process.env.email_id,
+        from: vedant.nare04@gmail.com,
         to: req,
         subject: 'Reset Password Link',
         text: 'Click on the following link to reset Fundoo password.Link will be active for 12 hours.\n'+url
@@ -60,13 +60,13 @@ let sendVerifyLink = (url,req) =>
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-        user: process.env.email_id,
-        pass: process.env.password
+        user: vedant.nare04@gmail.com,
+        pass: zjcluqqdltewqdng
         } 
     });
 
     let mailOptions = {
-        from: process.env.email_id,
+        from: vedant.nare04@gmail.com,
         to: req,
         subject: 'Verification link',
         text: 'Click on the following link to verify Fundoo account.\n'+url
