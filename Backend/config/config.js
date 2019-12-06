@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const logger = require('../services/log');
 
 module.exports = {
-    port:process.env.port || 5000,
+    port:5000,
 //     user_key:process.env.IAM_USER_KEY,
 //     secret_key:process.env.IAM_USER_SECRET,
 //     bucket:process.env.BUCKET_NAME,
