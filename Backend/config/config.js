@@ -29,7 +29,7 @@ module.exports = {
         });
 
         mongoose.connection.on('connected', function () {
-            logger.info(`Mongoose default connection is open on ${process.env.url}`);
+            logger.info(`Mongoose default connection is open on 27017`);
         });
     
         mongoose.connection.on('error', function (err) {
